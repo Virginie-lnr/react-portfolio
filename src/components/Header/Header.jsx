@@ -1,5 +1,5 @@
 import React from 'react'
-import "./header.scss"
+import "./header.css"
 import logo from '../../images/logovl40px.svg';
 import {Link} from "react-router-dom";
 
@@ -10,7 +10,7 @@ export default function Header() {
         <div className="container">
           <nav>
             <div className="logo">
-              <Link to ="/"><a><img src={logo} /></a></Link>
+              <Link to ="/"><img src={logo} alt="logo"/></Link>
           </div>
           {/* /* toggle bar */ }
           <div className="toggle-bar">
@@ -20,11 +20,11 @@ export default function Header() {
           </div>
           <div className="navigation-bar">
             <ul>
-              <li><a><Link to="/about">about</Link></a></li>
-                <li><a><Link to="/services">services</Link></a></li>
-                <li><a><Link to="/my-work">my work</Link></a></li>
-                <li><a><Link to="/certifications">certifications</Link></a></li>
-                <li className="contact-btn"><Link to="/contact">Contact me</Link></li>
+              <li><Link to="/about">about</Link></li>
+              <li><Link to="/services">services</Link></li>
+              <li><Link to="/my-work">my work</Link></li>
+              <li><Link to="/certifications">certifications</Link></li>
+              <li className="contact-btn"><Link to="/contact">Contact me</Link></li>
             </ul>
           </div>
         </nav>

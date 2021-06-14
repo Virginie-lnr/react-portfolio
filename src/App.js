@@ -6,16 +6,15 @@ import Services from "./Services.jsx";
 import Work from "./Work.jsx";
 import Certifications from "./Certifications.jsx";
 import Contact from "./Contact.jsx";
-import {Route, Link} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 
 function App() {
   return (
-    <div className="app">
       <body>
         <div className="glass-container">
           <Header />
-          <div class="main-content">
-            <div class="container">
+          <div className="main-content">
+            <div className="container">
                 <Route exact path="/" component={Home} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/services" component={Services} />
@@ -26,7 +25,6 @@ function App() {
           </div>
         </div>
       </body>
-    </div>
   );
 }
 

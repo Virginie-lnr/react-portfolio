@@ -1,0 +1,37 @@
+.content-wrapper{
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+form h2{
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+.form-content {
+  display: grid;
+  gap: 5px;
+  grid-template-rows: repeat(4, 1fr) 105px;
+}
+
+input, textarea{
+  border: none;
+  border-radius: 5px;
+  padding: .5em;
+}
+
+input.button{
+  cursor: pointer;
+  padding: 13px 25px;
+  background: #292423;
+  width: 190px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 35px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
